@@ -1,4 +1,4 @@
-# [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
+# [Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
 ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
