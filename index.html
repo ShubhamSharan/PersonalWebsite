@@ -64,17 +64,7 @@
     <div class="container">
       <div class="header-content">
         <h1>I'm <span class="typed"></span></h1>
-        <p>Graphic Designer, Developer, Photographer</p>
-
-
-        <ul class="list-unstyled list-social">
-          <li><a href="https://www.facebook.com/shubham.sharan.100"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="https://github.com/CosmeticCatCoder"><i class="ion-social-github"></i></a></li>
-          <li><a href="https://plus.google.com/113584853550234192754"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/shubham-sharan-a48145116/"><i class="ion-social-linkedin"></i></a></li>
-          <li><a href="http://yourshot.nationalgeographic.com/profile/731522/"><i class="ion-android-image"></i></a></li>
-
-        </ul>
+        <p>Photographer, Designer, Data Scientist</p> 
       </div>
     </div>
   </div>
@@ -97,10 +87,8 @@
         <div class="col-lg-7">
           <div class="about-descr">
             <p class="p-heading"> About me</p>
-            <p class="seperator"> My name is Shubham Sharan, I am from New Dehli, India currently pursing a Bachelor's degree in Computer Science Honors, focusing in the Software Engineering Stream with a minor in Statistics. I aspire to be a data scientist and some of my current traits are listed as follows: </p>
-            <div class="hoja">Shubham</div>
+            <p class="seperator"> I work as a Data Scientist and recently moved to Toronto from Montreal. I got into photography in 2021 after not having touched a camera in 3 years, all started with visiting all these places on my bike. The rides took me to mossy mountains, vast, and frozen lakes. I got my first camera a Sony A7II and having been taking pictures ever since and contributing to the open source world and looking to expand my shop with teaching people the art and doing more shoots.</p>
           </div>
-
         </div>
       </div>
     </div>
@@ -110,47 +98,54 @@
 
   <!-- start section services -->
   <div id="services">
+    <div class="section-title text-center">
+      <h2>Photography Bundles</h2>
+    </div>
     <div class="container">
         <div class="services-carousel owl-theme">
 
           <div class="services-block">
 
             <i class="ion-ios-eye-outline"></i>
-            <span>UI/UX</span>
-            <p class="separator">Simple Modular diagrams accompanied with flowcharts, UML diagrams and functional interfaces </p>
-
+            <span>Portraits</span>
+            <p class="separator"> Portraits can be you or more than you, looking for something proffesional and serious or something to capture a time in your life. </p>
+            <br/>
+            <button class="button button1" type="button">Book Portraits</button>
           </div>
 
           <div class="services-block">
 
             <i class="ion-ios-browsers-outline"></i>
-            <span>FRONT-END DEVELOPMENT</span>
-            <p class="separator">Simple HTML based webpages, using CSS styling and functionality based using Javascript code. </p>
-
+            <span>Automotive</span>
+            <p class="separator">Car shoots are a labor of love, and right now we are focusing on still shots. </p>
+            <br/>
+            <button class="button button1" type="button">Book Day Hires</button>
           </div>
 
-          <div class="services-block">
-            <i class="ion-ios-cog-outline"></i>
-            <span>BACK-END DEVELOPMENT</span>
-            <p class="separator">Writing sleek efficient Java code and I tend to dabble a bit in Python as well. </p>
-          </div>
 
           <div class="services-block">
-            <i class="ion-ios-color-wand-outline"></i>
-            <span>GRAPHIC DESIGN</span>
-            <p class="separator">I tend to use photoshop and create vectors of my sketches and the photographs I tend to take.</p>
-          </div>
 
-          <div class="services-block">
-            <i class="ion-ios-analytics-outline"></i>
-            <span>STATISTICS</span>
-            <p class="separator"> A good understanding of a variety of data collection techniques which is analyzed by a collection of statistical principles. </p>
+            <i class="ion-ios-browsers-outline"></i>
+            <span>Day Hires (POPULAR)</span>
+            <p class="separator">Me and my partner, will be crashing your gathering and capturing every smile, every drink, and every promise made. We can direct a shot or capture you just being you. Everything from a special occasion to just a gathering of people. </p>
+            <br/>
+            <button class="button button1" type="button">Book Day Hires</button>
           </div>
 
           <div class="services-block">
             <i class="ion-ios-camera-outline"></i>
-            <span>PHOTOGRAPHY</span>
-            <p class="separator">I tend to do travel photography, which incorporate elements like architecture, nature and much more.  </p>
+            <span>Local Businesses</span>
+            <p class="separator">Have you released a new product, opened a new location or maybe your first location - and would love to commemerate the moment.</p>
+            <br/>
+            <button class="button button1" type="button">Book Day Hires</button>
+          </div>
+
+          <div class="services-block">
+            <i class="ion-ios-color-wand-outline"></i>
+            <span>Brand Partnerships</span>
+            <p class="separator">Do you have a lot of photos that need editing or would like to learn how to edit photos, let me support you. </p>
+            <br/>
+            <button class="button button1" type="button">Book Day Hires</button>
           </div>
 
         </div>
@@ -178,77 +173,138 @@
 
             <ul class="nav list-unstyled" id="portfolio-flters">
               <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".nature">nature</li>
-              <li class="filter" data-filter=".human">human</li>
-              <li class="filter" data-filter=".architecture">architecture</li>
-              <li class="filter" data-filter=".abstract">abstract</li>
+              <li class="filter" data-filter=".animal">animals</li>
+              <li class="filter" data-filter=".auto">automotive</li>
+              <li class="filter" data-filter=".bw">black and white</li>
+              <li class="filter" data-filter=".goldenhour">golden hour</li>
+              <li class="filter" data-filter=".night">night</li>
+              <li class="filter" data-filter=".people">people</li>
+              <li class="filter" data-filter=".street">street</li>
+              <li class="filter" data-filter=".travel">travel</li>
             </ul>
 
           </div>
+          <div class="portfolio-container" id="portfolio-container"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Define data for each div
+                var divData = [
+                    {"tags": "all animal", "URL": "images/portfolio/animal1.jpg"},
+                    {"tags": "all animal", "URL": "images/portfolio/animal2.jpg"},
+                    {"tags": "all animal", "URL": "images/portfolio/animal3.jpg"},
+                    {"tags": "all animal", "URL": "images/portfolio/animal4.jpg"},
+                    {"tags": "all animal", "URL": "images/portfolio/animal5.jpg"},
+                    {"tags": "all animal", "URL": "images/portfolio/animal6.jpg"},
+                    
+                    {"tags": "all auto night", "URL": "images/portfolio/auto1.jpg"},
+                    {"tags": "all auto night", "URL": "images/portfolio/auto2.jpg"},
+                    {"tags": "all auto", "URL": "images/portfolio/auto3.jpg"},
+                    {"tags": "all auto", "URL": "images/portfolio/auto4.jpg"},
+                    {"tags": "all auto", "URL": "images/portfolio/auto5.jpg"},
+                    {"tags": "all auto", "URL": "images/portfolio/auto6.jpg"},
 
-          <div class="portfolio-container">
+                    {"tags": "all bw", "URL": "images/portfolio/bw1.jpg"},
+                    {"tags": "all bw", "URL": "images/portfolio/bw2.jpg"},
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all abstract">
-              <a class="popup-img" href="images/portfolio/abst1.jpeg">
-                <img src="images/portfolio/abst1.jpeg" alt="img">
-              </a>
-            </div>
+                    {"tags": "all street", "URL": "images/portfolio/street1.jpg"},
+                    {"tags": "all street", "URL": "images/portfolio/street2.jpg"},
+                    {"tags": "all street", "URL": "images/portfolio/street3.jpg"},
+                    {"tags": "all street", "URL": "images/portfolio/street4.jpg"},
+                    {"tags": "all street", "URL": "images/portfolio/street5.jpg"},
+                    {"tags": "all street", "URL": "images/portfolio/street6.jpg"},
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all abstract">
-              <a class="popup-img" href="images/portfolio/abst2.jpeg">
-                <img src="images/portfolio/abst2.jpeg"  alt="img">
-              </a>
-            </div>
+                    {"tags": "all travel", "URL": "images/portfolio/travel1.jpg"},
+                    {"tags": "all travel", "URL": "images/portfolio/travel2.jpg"},
+                    {"tags": "all travel", "URL": "images/portfolio/travel3.jpg"},
+                    {"tags": "all travel", "URL": "images/portfolio/travel4.jpg"},
+                    {"tags": "all travel", "URL": "images/portfolio/travel5.jpg"},
+                    {"tags": "all travel", "URL": "images/portfolio/travel6.jpg"},
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all architecture">
-              <a class="popup-img" href="images/portfolio/arch1.jpeg">
-                <img src="images/portfolio/arch1.jpeg" alt="img">
-              </a>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all architecture nature">
-              <a class="popup-img" href="images/portfolio/arch2nature.jpeg">
-                <img src="images/portfolio/arch2nature.jpeg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all human">
-              <a class="popup-img" href="images/portfolio/human1.jpeg">
-                <img src="images/portfolio/human1.jpeg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all human">
-              <a class="popup-img" href="images/portfolio/human2.jpeg">
-                <img src="images/portfolio/human2.jpeg" alt="img">
-              </a>
-            </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-thumbnail all human">
-                  <a class="popup-img" href="images/portfolio/human3.jpeg">
-                    <img src="images/portfolio/human3.jpeg" alt="img">
-                  </a>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-thumbnail all human">
-                  <a class="popup-img" href="images/portfolio/human4.jpeg">
-                    <img src="images/portfolio/human4.jpeg" alt="img">
-                  </a>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-thumbnail all nature">
-                  <a class="popup-img" href="images/portfolio/nature1.jpeg">
-                    <img src="images/portfolio/nature1.jpeg" alt="img">
-                  </a>
-                </div>
-              </a>
-            </div>
+                    {"tags": "all people", "URL": "images/portfolio/people1.jpg"},
+                    {"tags": "all people", "URL": "images/portfolio/people2.jpg"},
+                    {"tags": "all people goldenhour", "URL": "images/portfolio/people3.jpg"},
+                    {"tags": "all people", "URL": "images/portfolio/people4.jpg"},
+                    {"tags": "all people", "URL": "images/portfolio/people5.jpg"},
+                    {"tags": "all people bw", "URL": "images/portfolio/people6.jpg"},
+                    // Add more data as needed
+                ];
+            
+                // Loop through the data and generate HTML for each div
+                var portfolioContainer = document.getElementById("portfolio-container");
+                console.log(portfolioContainer)
+                divData.forEach(function(data) {
+                    var divHtml = `
+                    <div class="col-lg-4 col-md-6 portfolio-thumbnail ${data.tags}">
+                        <a class="popup-img" href="${data.URL}">
+                            <img src="${data.URL}"  style="width: 460px; height: 200px;object-fit: cover;"  alt="img">
+                        </a>
+                    </div>
+                    `;
+                    portfolioContainer.innerHTML += divHtml;
+                });
+            
+                // Initialize Isotope after adding portfolio items
+                var portfolioGrid = document.querySelector('portfolio-container');
+                var iso = new Isotope(portfolioGrid, {
+                    itemSelector: '.portfolio-thumbnail',
+                    layoutMode: 'fitRows'
+                });
+            });
+            </script>
+          
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- End section portfolio -->
+  <!-- Photography Packages -->
+
+  <div id="services">
+    <br/>
+    <div class="section-title text-center">
+      <h2>Learn Photography</h2>
+    </div>
+    <div class="container">
+        <div class="services-carousel owl-theme">
+
+          <div class="services-block">
+
+            <i class="ion-ios-eye-outline"></i>
+            <span>Welcome Pack</span>
+            <h4>Beginner Friendly</h4><br/>
+            <p class="separator">This pack comprises of 3 primary classes, where we go around the city of Toronto taking photos at different times of the day and learning the very basics of photography. </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-browsers-outline"></i>
+            <span>Golden Hour Shoot</span>
+            <h4>Intermediate</h4><br/>
+            <p class="separator">This is where we head out on a nice clear sky day when the sun is about to set, a great time to take photos. We learn to play with shadows, working with the direction of incoming light and identifying composition. </p>
+
+          </div>
+
+          <div class="services-block">
+            <i class="ion-ios-camera-outline"></i>
+            <span>Night Shoot</span>
+            <h4>Advanced</h4><br/>
+            <p class="separator">Learn how to take great photos at night, even if you don't have a flash as we learn to use the light around you. </p>
+          </div>
+
+          <div class="services-block">
+            <i class="ion-ios-color-wand-outline"></i>
+            <span>EDITING</span>
+            <h4>Beginner and Intermediate</h4><br/>
+            <p class="separator">Do you have a lot of photos that need editing or would like to learn how to edit photos, let me support you. </p>
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
 
   <!-- start sectoion contact -->
   <div id="contact" class="paddsection">
@@ -262,10 +318,10 @@
               <h2 class="mb-30">GET IN TOUCH</h2>
 
               <ul class="contact-details">
-                <li><span>1125 Colonel by Drive</span></li>
-                <li><span>Ottawa, Canada</span></li>
-                <li><span>(613) 707-4754</span></li>
-                <li><span>shubhamsharan09@gmail.com</span></li>
+                <li><span>Based in Toronto</span></li>
+                <li><span>Email me at shubhamsphotolife@gmail.com or book a consulation.</span></li>
+                <br/>
+                <button class="button button1" type="button">Book a consulation</button>
               </ul>
 
             </div>
@@ -276,6 +332,52 @@
   </div>
   <!-- start sectoion contact -->
 
+  <div id="services">
+    <br/><br/>
+    <div class="section-title text-center">
+      <h2>Photos Used By</h2>
+      <p>Most publications were with a common creatives license. I have 500K monthly views for 185 photos published till date. </p>
+    </div>
+    <div class="container">
+        <div id="partnership-container" class="services-carousel owl-theme">
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Define data for each div
+                var divData = [];
+                // Loop 3 times to create 3 objects
+                for (var i = 1; i <= 19; i++) {
+                  divData.push({ "URL": "images/unsplash/" + i + ".png" });
+                }
+            
+                // Loop through the data and generate HTML for each div
+                var portfolioContainer = document.getElementById("partnership-container");
+                console.log(portfolioContainer)
+                divData.forEach(function(data) {
+                    var divHtml = `
+                    <div class="services-block">
+                      <img src="${data.URL}" style="width: 200px; height: 100px; object-fit: contain;"></img>
+                    </div>
+                    `;
+                    portfolioContainer.innerHTML += divHtml;
+                });
+            
+                // Initialize Isotope after adding portfolio items
+                var portfolioGrid = document.querySelector('portfolio-container');
+                var iso = new Isotope(portfolioGrid, {
+                    itemSelector: '.portfolio-thumbnail',
+                    layoutMode: 'fitRows'
+                });
+            });
+            </script>
+        
+
+
+        </div>
+
+    </div>
+
+  </div>
+
 
   <!-- start section footer -->
   <div id="footer" class="text-center">
@@ -283,9 +385,9 @@
 
       <p>&copy; Copyrights ShubhamS. All rights reserved.</p>
 
-      <div class="credits">
+      <!-- <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      </div> -->
 
     </div>
   </div>
