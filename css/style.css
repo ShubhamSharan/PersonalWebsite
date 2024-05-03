@@ -535,6 +535,12 @@ nav ul li a {
   width: 100%;
 }
 
+.icon {
+  font-size: 45px;
+  --ionicon-stroke-width: 16px;
+  color: black;
+}
+
 .button {
   background-color: #001A33;
   border: none;
@@ -558,6 +564,17 @@ nav ul li a {
 .button1:hover {
   background-color: #001A33;
   color: white;
+}
+
+.button2 {
+  background-color: lightgrey; 
+  color: grey; 
+  border: 2px solid #001A33;
+}
+
+.button2:hover {
+  background-color: lightgrey;
+  color: grey;
 }
 
 
