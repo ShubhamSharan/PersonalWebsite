@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Shubham Sharan.", "A Photographer.", "A Designer.", "A Data Scientist."],
+      strings: ["take portraits.", "take nature shots.", "take city shots.", "take car shots.", "take pet photos.", "sell prints."],
       typeSpeed: 100,
       loop: true,
     });
@@ -92,11 +92,11 @@ $(document).ready(function() {
 
 
   $('.services-carousel').owlCarousel({
-      autoplay: true,
+      autoplay: false,
       loop: true,
       margin: 20,
-      dots: true,
-      nav: false,
+      dots: false,
+      nav: true,
       responsiveClass: true,
       responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
     });

@@ -121,7 +121,7 @@ p {
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .section-title h2 {
@@ -151,13 +151,14 @@ p {
 }
 
 .paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin:30px;
 }
 
 .paddsections {
-  padding-top: 90px;
-  padding-bottom: 90px !important;
+  padding-top: 30px;
+  padding-bottom: 30px !important;
 }
 
 .hvr-shutter-in-horizontal::before {
@@ -524,11 +525,11 @@ nav ul li a {
 .contact-details {
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 .contact-details li {
   padding-bottom: 10px;
+  list-style-type: circle;
 }
 
 #contact input, #contact textarea {
