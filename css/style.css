@@ -383,6 +383,33 @@ nav ul li a {
   background-color: #001A33;
 }
 
+.services-carousel-show  .owl-stage-outer {
+  overflow: hidden;
+}
+
+.services-carousel-show .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+  padding: 20px;
+}
+
+.services-carousel-show .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+  border: 0;
+  padding: 0 !important;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.services-carousel-show .owl-dot.active {
+  background-color: #001A33;
+}
+
+
 .owl-nav {
   display: none;
 }

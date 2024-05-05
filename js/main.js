@@ -101,6 +101,16 @@ $(document).ready(function() {
       responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
     });
 
+    $('.services-carousel-show').owlCarousel({
+      autoplay: true,
+      loop: true,
+      margin: 20,
+      dots: true,
+      nav: true,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+    });
+
 
   // ========================================================================= //
   //  Porfolio isotope and filter
