@@ -421,11 +421,11 @@ nav ul li a {
 
 #portfolio {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 #portfolio .portfolio-list {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 #portfolio .portfolio-list .nav {
@@ -434,7 +434,7 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav li {
-  margin: 0 30px 0 0;
+  margin: 0 20px 0 0;
   float: left;
   font-size: 14px;
   color: #999999;

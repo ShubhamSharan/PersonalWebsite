@@ -93,11 +93,11 @@ $(document).ready(function() {
 
   $('.services-carousel').owlCarousel({
       autoplay: false,
-      loop: true,
+      loop: false,
       margin: 20,
       dots: false,
-      nav: true,
-      responsiveClass: true,
+      nav: false,
+      responsiveClass: false,
       responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
     });
 
